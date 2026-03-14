@@ -12,10 +12,11 @@
 
 进入你 Fork 后的仓库 → **Settings** → **Secrets and variables** → **Actions** → **New repository secret**
 
-| Secret 名称 | 说明 | 获取方法 |
-|-------------|------|----------|
-| `DISCORD_TOKEN` | 你的 Discord 账号 Token | 打开 Discord 网页版 → F12 → Network → 任意请求 → Headers → `authorization` |
-| `SESSION_ID` | 你的 Discord Session ID | F12 → Network → 找一个 `interactions` 请求 → Payload → `session_id` |
+| Secret 名称 | 是否必填 | 说明 | 获取方法 |
+|-------------|----------|------|----------|
+| `DISCORD_TOKEN` | ✅ 必填 | Discord 账号 Token | 打开 Discord 网页版 → F12 → Network → 任意请求 → Headers → `authorization` |
+| `SESSION_ID` | ✅ 必填 | Discord Session ID | F12 → Network → 找一个 `interactions` 请求 → Payload → `session_id` |
+| `GOST_PROXY` | ⭕ 可选 | 代理地址，不填则直连 | 格式：`socks5://user:pass@host:port` |
 
 ### 3. 启用 Actions
 
